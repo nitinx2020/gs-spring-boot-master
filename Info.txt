@@ -1,0 +1,11 @@
+mvn -f app/pom.xml clean package
+
+from the app folder:
+mvn spring-boot:run
+
+I changed the server servlet context path to myapp:
+http://localhost:8080/myapp/
+
+
+Source:
+https://github.com/HoussemDellai/gs-spring-boot
