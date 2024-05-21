@@ -9,7 +9,7 @@ trigger:
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: 'nitinx2020'
+
   
   # Web app name
   webAppName: 'java-spring-boot'
