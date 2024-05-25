@@ -7,7 +7,7 @@ trigger:
 - master
 
 variables:
-  - group: NewVariableGroup 
+  - group: NewVariableGroupNew 
   # Azure Resource Manager connection created during pipeline creation
   # azureSubscription: $(SubscriptionID)
    
