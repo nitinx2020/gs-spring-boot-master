@@ -6,10 +6,6 @@
 trigger:
 - master
 
-#removed as showing error here
-#pool:
-#  - 'name': 'MyAgent2'
-
 variables:
   - group: NewVariableGroupNew 
   # Azure Resource Manager connection created during pipeline creation
