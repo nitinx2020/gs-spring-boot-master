@@ -6,6 +6,10 @@
 trigger:
 - master
 
+#removed as showing error here
+#pool:
+#  - 'name': 'MyAgent2'
+
 variables:
   - group: NewVariableGroupNew 
   # Azure Resource Manager connection created during pipeline creation
@@ -26,6 +30,7 @@ stages:
     displayName: Maven Package and Publish Artifacts
     pool:
       vmImage: $(vmImageName)
+      name: 'MyAgent2'
     
     steps:
     - task: Maven@3
@@ -55,6 +60,7 @@ stages:
     environment: 'development'
     pool: 
       vmImage: $(vmImageName)
+      name: 'MyAgent2'
     strategy:
       runOnce:
         deploy:
