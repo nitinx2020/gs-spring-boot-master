@@ -7,7 +7,7 @@ trigger:
 - master
 
 variables:
-  - group: NewVariableGroupNew 
+  - group: VariableGroup
   # Azure Resource Manager connection created during pipeline creation
   # azureSubscription: $(SubscriptionID)
    
@@ -26,7 +26,7 @@ stages:
     displayName: Maven Package and Publish Artifacts
     pool:
       vmImage: $(vmImageName)
-      name: 'MyAgent2'
+      name: 'MyAgent'
     
     steps:
     - task: Maven@3
@@ -56,7 +56,7 @@ stages:
     environment: 'development'
     pool: 
       vmImage: $(vmImageName)
-      name: 'MyAgent2'
+      name: 'MyAgent'
     strategy:
       runOnce:
         deploy:
